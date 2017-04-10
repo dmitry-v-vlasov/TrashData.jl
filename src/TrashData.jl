@@ -14,6 +14,6 @@ export load_data, save_data
 
 export createDataFrameWithColumns
 
-export transform_antisymmetric_data
+export mirror_antisymmetric_data
 
 end # module
