@@ -5,6 +5,8 @@ include("matrix-data/triangle.jl")
 include("io/file.jl")
 include("io/utils.jl")
 include("dataframe/dataframe.jl")
+include("interpolation/spline.jl")
+include("table-data/merge.jl")
 
 
 export data_size_symmetric_matrix, data_column_upper_matrix, data_column_lower_matrix
@@ -15,5 +17,9 @@ export load_data, save_data
 export createDataFrameWithColumns
 
 export mirror_antisymmetric_data
+
+# ---
+export convert_functionDataFrame_to_Functions
+export merge_data_piece
 
 end # module

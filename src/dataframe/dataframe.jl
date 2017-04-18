@@ -20,3 +20,12 @@ end
 function save_data(data::DataFrame, file::AbstractString; header=true)
   writetable(file, data; separator=' ', quotemark=' ', header=header, nastring="EMPTY")
 end
+
+function data_row_to_vector(data::DataFrame, irow::Int)
+  L = size(data, 2)
+  v = Vector{Float64}(L)
+  for l = 1:L
+    v[l] = data[irow, l]
+  end
+  return v
+end
