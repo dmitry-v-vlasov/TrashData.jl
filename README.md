@@ -14,3 +14,8 @@ For large data you've better use
 ```sh
 split -C 150M data.ddr data.ddr_
 ```
+
+```Julia
+using TrashData
+join_data_files_sequencially(["output-89-9.77927-transformation-matrix.dsv", "output-89-29.63403-transformation-matrix.dsv"], "result-t.dsv"; header=true);
+```
